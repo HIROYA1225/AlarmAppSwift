@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45184DE825F872B900B99E07 /* WakeupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45184DE725F872B900B99E07 /* WakeupViewController.swift */; };
 		4535159725E1552C00727FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535159625E1552C00727FAB /* AppDelegate.swift */; };
 		4535159925E1552C00727FAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535159825E1552C00727FAB /* SceneDelegate.swift */; };
 		4535159B25E1552C00727FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535159A25E1552C00727FAB /* ViewController.swift */; };
 		4535159E25E1552C00727FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4535159C25E1552C00727FAB /* Main.storyboard */; };
 		453515A025E1552D00727FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4535159F25E1552D00727FAB /* Assets.xcassets */; };
 		453515A325E1552D00727FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453515A125E1552D00727FAB /* LaunchScreen.storyboard */; };
+		45D0302D25E1F0CF00C98A40 /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0302B25E1F0CF00C98A40 /* CurrentTime.swift */; };
+		45D0302E25E1F0CF00C98A40 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0302C25E1F0CF00C98A40 /* Alarm.swift */; };
+		45D0303225E1F0D900C98A40 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0303025E1F0D900C98A40 /* SetViewController.swift */; };
+		45D0303325E1F0D900C98A40 /* SleepingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0303125E1F0D900C98A40 /* SleepingViewController.swift */; };
+		45D0309F25EE5A4400C98A40 /* dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45D0309E25EE5A4400C98A40 /* dog.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45184DE725F872B900B99E07 /* WakeupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeupViewController.swift; sourceTree = "<group>"; };
 		4535159325E1552C00727FAB /* AlarmAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4535159625E1552C00727FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4535159825E1552C00727FAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		4535159F25E1552D00727FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		453515A225E1552D00727FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		453515A425E1552D00727FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D0302B25E1F0CF00C98A40 /* CurrentTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
+		45D0302C25E1F0CF00C98A40 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		45D0303025E1F0D900C98A40 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		45D0303125E1F0D900C98A40 /* SleepingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepingViewController.swift; sourceTree = "<group>"; };
+		45D0309E25EE5A4400C98A40 /* dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 		4535159525E1552C00727FAB /* AlarmAppSwift */ = {
 			isa = PBXGroup;
 			children = (
+				45D0302F25E1F0D900C98A40 /* Controller */,
+				45D0302A25E1F0CF00C98A40 /* Model */,
 				4535159625E1552C00727FAB /* AppDelegate.swift */,
 				4535159825E1552C00727FAB /* SceneDelegate.swift */,
 				4535159A25E1552C00727FAB /* ViewController.swift */,
@@ -63,8 +77,28 @@
 				4535159F25E1552D00727FAB /* Assets.xcassets */,
 				453515A125E1552D00727FAB /* LaunchScreen.storyboard */,
 				453515A425E1552D00727FAB /* Info.plist */,
+				45D0309E25EE5A4400C98A40 /* dog.mp3 */,
 			);
 			path = AlarmAppSwift;
+			sourceTree = "<group>";
+		};
+		45D0302A25E1F0CF00C98A40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45D0302B25E1F0CF00C98A40 /* CurrentTime.swift */,
+				45D0302C25E1F0CF00C98A40 /* Alarm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45D0302F25E1F0D900C98A40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45D0303025E1F0D900C98A40 /* SetViewController.swift */,
+				45D0303125E1F0D900C98A40 /* SleepingViewController.swift */,
+				45184DE725F872B900B99E07 /* WakeupViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453515A325E1552D00727FAB /* LaunchScreen.storyboard in Resources */,
+				45D0309F25EE5A4400C98A40 /* dog.mp3 in Resources */,
 				453515A025E1552D00727FAB /* Assets.xcassets in Resources */,
 				4535159E25E1552C00727FAB /* Main.storyboard in Resources */,
 			);
@@ -138,7 +173,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4535159B25E1552C00727FAB /* ViewController.swift in Sources */,
+				45184DE825F872B900B99E07 /* WakeupViewController.swift in Sources */,
+				45D0303225E1F0D900C98A40 /* SetViewController.swift in Sources */,
 				4535159725E1552C00727FAB /* AppDelegate.swift in Sources */,
+				45D0302E25E1F0CF00C98A40 /* Alarm.swift in Sources */,
+				45D0303325E1F0D900C98A40 /* SleepingViewController.swift in Sources */,
+				45D0302D25E1F0CF00C98A40 /* CurrentTime.swift in Sources */,
 				4535159925E1552C00727FAB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7MH4RDBLV;
 				INFOPLIST_FILE = AlarmAppSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7MH4RDBLV;
 				INFOPLIST_FILE = AlarmAppSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
