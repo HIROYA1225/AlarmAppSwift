@@ -5,25 +5,25 @@
 //  Created by HIRO on 2021/03/10.
 //
 
+import Foundation
 import UIKit
 
 class WakeupViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    var currentTime = CurrentTime()
+    
+    override func viewDidLoad(){
+        //currentTime.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateTime(_ time:String){
+        timeLabel.text = time
     }
-    */
-
+    
+    @IBOutlet var timeLabel: UILabel!
+    
+    @IBAction func stopBtnWasPressed(_ sender: UIButton) {
+        //移動先の画面でdismissを実行すると、移動前の画面に戻る
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

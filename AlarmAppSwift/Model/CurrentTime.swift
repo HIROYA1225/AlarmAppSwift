@@ -29,6 +29,6 @@ class CurrentTime{
         //現在の時間をフォーマットに合わせて設定する
         let timezoneDate = df.string(from: Date())
         currentTime = timezoneDate
-        delegate?.updateTime(currentTime!)
+        //delegate?.updateTime(currentTime!)
     }
 }

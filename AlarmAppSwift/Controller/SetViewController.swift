@@ -28,11 +28,11 @@ class SetViewController: UIViewController{
     override func viewDidAppear(_ animated: Bool){
         //sleepTimerがnil出ない場合
         if alarm.sleepTimer != nil{
-            //再生されているタイマーを止める
+            //再生されているタイマーを止める。
             alarm.stopTimer()
         }
     }
-    //SLEEPボタンが押されたときの処理
+    //SETボタンが押されたときの処理
     @IBAction func alarmBtnWasPressed(_ sender: UIButton) {
         //selectedWakeUpTimeにユーザーの入力した日付を代入
         alarm.selectedWakeUpTime = sleepTimePicker.date
@@ -41,5 +41,9 @@ class SetViewController: UIViewController{
         //画面移動
         performSegue(withIdentifier: "setToSleeping", sender: nil)
     }
-
+    
+    
+    @IBAction func cancelBtnWasPressed(_ sender: Any) {
+    }
+    
 }
