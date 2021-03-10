@@ -50,17 +50,18 @@
                     </navigationItem>
                     <connections>
                         <outlet property="sleepTimePicker" destination="l9v-iO-86N" id="062-2q-pCK"/>
+                        <segue destination="FhA-0G-ahP" kind="show" identifier="backHome" id="sF6-gs-n3R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1989.2307692307691" y="113.74407582938387"/>
+            <point key="canvasLocation" x="2000" y="114"/>
         </scene>
-        <!--Sleeping View Controller-->
+        <!--Wakeup Time View Controller-->
         <scene sceneID="SNf-Au-Q1u">
             <objects>
-                <viewController id="FhA-0G-ahP" customClass="SleepingViewController" customModule="AlarmAppSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2wI-Qc-4Pe">
+                <viewController id="FhA-0G-ahP" customClass="WakeupTimeViewController" customModule="AlarmAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="2wI-Qc-4Pe">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -162,6 +163,9 @@
             <point key="canvasLocation" x="2691" y="532"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dq8-vx-hfT"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -17,7 +17,7 @@
 		45D0302D25E1F0CF00C98A40 /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0302B25E1F0CF00C98A40 /* CurrentTime.swift */; };
 		45D0302E25E1F0CF00C98A40 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0302C25E1F0CF00C98A40 /* Alarm.swift */; };
 		45D0303225E1F0D900C98A40 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0303025E1F0D900C98A40 /* SetViewController.swift */; };
-		45D0303325E1F0D900C98A40 /* SleepingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0303125E1F0D900C98A40 /* SleepingViewController.swift */; };
+		45D0303325E1F0D900C98A40 /* WakeupTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0303125E1F0D900C98A40 /* WakeupTimeViewController.swift */; };
 		45D0309F25EE5A4400C98A40 /* dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45D0309E25EE5A4400C98A40 /* dog.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		45D0302B25E1F0CF00C98A40 /* CurrentTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
 		45D0302C25E1F0CF00C98A40 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		45D0303025E1F0D900C98A40 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
-		45D0303125E1F0D900C98A40 /* SleepingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepingViewController.swift; sourceTree = "<group>"; };
+		45D0303125E1F0D900C98A40 /* WakeupTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WakeupTimeViewController.swift; sourceTree = "<group>"; };
 		45D0309E25EE5A4400C98A40 /* dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				45D0303025E1F0D900C98A40 /* SetViewController.swift */,
-				45D0303125E1F0D900C98A40 /* SleepingViewController.swift */,
+				45D0303125E1F0D900C98A40 /* WakeupTimeViewController.swift */,
 				45184DE725F872B900B99E07 /* WakeupViewController.swift */,
 			);
 			path = Controller;
@@ -177,7 +177,7 @@
 				45D0303225E1F0D900C98A40 /* SetViewController.swift in Sources */,
 				4535159725E1552C00727FAB /* AppDelegate.swift in Sources */,
 				45D0302E25E1F0CF00C98A40 /* Alarm.swift in Sources */,
-				45D0303325E1F0D900C98A40 /* SleepingViewController.swift in Sources */,
+				45D0303325E1F0D900C98A40 /* WakeupTimeViewController.swift in Sources */,
 				45D0302D25E1F0CF00C98A40 /* CurrentTime.swift in Sources */,
 				4535159925E1552C00727FAB /* SceneDelegate.swift in Sources */,
 			);

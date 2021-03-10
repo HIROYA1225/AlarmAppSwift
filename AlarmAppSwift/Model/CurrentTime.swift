@@ -12,7 +12,7 @@ class CurrentTime{
     var timer: Timer?
     var currentTime: String?
     var df = DateFormatter()
-    weak var delegate: SleepingViewController?
+    weak var delegate: WakeupTimeViewController?
     
     init(){
         if timer == nil{

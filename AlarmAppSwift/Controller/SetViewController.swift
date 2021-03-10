@@ -12,6 +12,9 @@ class SetViewController: UIViewController{
     
     let alarm = Alarm()
     //A control for the inputting of date and time values
+    
+    var timeArray: [Date] = []
+    
     @IBOutlet var sleepTimePicker: UIDatePicker!
     
     override func viewDidLoad(){
@@ -36,14 +39,13 @@ class SetViewController: UIViewController{
     @IBAction func alarmBtnWasPressed(_ sender: UIButton) {
         //selectedWakeUpTimeにユーザーの入力した日付を代入
         alarm.selectedWakeUpTime = sleepTimePicker.date
+        timeArray.append(sleepTimePicker.date)
+        print(timeArray)
         //タイマー実行
-        alarm.runTimer()
+        //alarm.runTimer()
         //画面移動
-        performSegue(withIdentifier: "setToSleeping", sender: nil)
+        performSegue(withIdentifier: "backHome", sender: nil)
     }
     
-    
-    @IBAction func cancelBtnWasPressed(_ sender: Any) {
-    }
     
 }
