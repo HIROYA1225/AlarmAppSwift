@@ -38,7 +38,7 @@ class SetViewController: UIViewController{
     //SETボタンが押されたときの処理
     @IBAction func alarmBtnWasPressed(_ sender: UIButton) {
         //selectedWakeUpTimeにユーザーの入力した日付を代入
-        alarm.selectedWakeUpTime = sleepTimePicker.date
+        //alarm.selectedWakeUpTime = sleepTimePicker.date
         timeArray.append(sleepTimePicker.date)
         print(timeArray)
         //タイマー実行
