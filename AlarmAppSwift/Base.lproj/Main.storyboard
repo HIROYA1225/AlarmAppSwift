@@ -27,7 +27,7 @@
                                     <color key="titleColor" systemColor="systemTealColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="alarmBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BTP-G9-Xag"/>
+                                    <segue destination="s4R-co-Ln8" kind="unwind" unwindAction="backToTopWithSegue:" id="FDD-Z8-dXW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,9 +43,11 @@
                     <navigationItem key="navigationItem" id="Z8I-VO-dAd"/>
                     <connections>
                         <outlet property="sleepTimePicker" destination="l9v-iO-86N" id="062-2q-pCK"/>
+                        <segue destination="FhA-0G-ahP" kind="show" identifier="goHome" id="A2I-YC-Do7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="s4R-co-Ln8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3783.0769230769229" y="113.74407582938387"/>
         </scene>
@@ -152,6 +154,9 @@
             <point key="canvasLocation" x="1904.6153846153845" y="113.74407582938387"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="A2I-YC-Do7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

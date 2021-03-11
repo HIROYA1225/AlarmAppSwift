@@ -23,9 +23,7 @@ class SetViewController: UIViewController{
         //dateAndTime -> The mode determines whether dates, times, or both dates and times are displayed
         sleepTimePicker.datePickerMode = UIDatePicker.Mode.dateAndTime
         //sets the date to display in the date picker
-        print(#function, sleepTimePicker.date)
         sleepTimePicker.setDate(Date(), animated: false)
-        print(#function, sleepTimePicker.date)
     }
     
     override func viewDidAppear(_ animated: Bool){
@@ -36,15 +34,14 @@ class SetViewController: UIViewController{
         }
     }
     //SETボタンが押されたときの処理
-    @IBAction func alarmBtnWasPressed(_ sender: UIButton) {
+    @IBAction func setBtnWasPressed(_ sender: Any) {
         //selectedWakeUpTimeにユーザーの入力した日付を代入
         //alarm.selectedWakeUpTime = sleepTimePicker.date
         timeArray.append(sleepTimePicker.date)
-        print(timeArray)
         //タイマー実行
         //alarm.runTimer()
         //画面移動
-        performSegue(withIdentifier: "backHome", sender: nil)
+        self.performSegue(withIdentifier: "goHome", sender: nil)
     }
     
     

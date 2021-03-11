@@ -28,6 +28,8 @@ class WakeupTimeViewController: UIViewController,UITableViewDelegate, UITableVie
         return fruits.count
     }
     
+    @IBAction func backToTop(segue: UIStoryboardSegue) {}
+    
     //Table View CellのIdentifierを指定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得する
