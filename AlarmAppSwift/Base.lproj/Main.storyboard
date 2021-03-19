@@ -27,7 +27,7 @@
                                     <color key="titleColor" systemColor="systemTealColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="s4R-co-Ln8" kind="unwind" unwindAction="backToTopWithSegue:" id="FDD-Z8-dXW"/>
+                                    <action selector="setBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtO-RA-T0l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,11 +43,9 @@
                     <navigationItem key="navigationItem" id="Z8I-VO-dAd"/>
                     <connections>
                         <outlet property="sleepTimePicker" destination="l9v-iO-86N" id="062-2q-pCK"/>
-                        <segue destination="FhA-0G-ahP" kind="show" identifier="goHome" id="A2I-YC-Do7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="s4R-co-Ln8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3783.0769230769229" y="113.74407582938387"/>
         </scene>
@@ -64,14 +62,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yLu-ao-nsF">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeCell" rowHeight="57" id="6Pd-wY-BV6">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yLu-ao-nsF" id="pBh-is-9dy">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Pd-wY-BV6" id="eCZ-eI-Yvr">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <accessibility key="accessibilityConfiguration" identifier="SampleCell"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -90,6 +87,7 @@
                         </connections>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="P4P-tj-3UU" id="9Pj-lW-bbs"/>
                         <segue destination="YIQ-4G-bne" kind="presentation" modalPresentationStyle="fullScreen" id="3Rz-pC-fpF"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goTimeSetting" id="364-Yn-H1c"/>
                     </connections>
@@ -154,9 +152,6 @@
             <point key="canvasLocation" x="1904.6153846153845" y="113.74407582938387"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="A2I-YC-Do7"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

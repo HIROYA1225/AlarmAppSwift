@@ -13,9 +13,11 @@ class SetViewController: UIViewController{
     let alarm = Alarm()
     //A control for the inputting of date and time values
     
+    @IBOutlet var sleepTimePicker: UIDatePicker!
+    
     var timeArray: [Date] = []
     
-    @IBOutlet var sleepTimePicker: UIDatePicker!
+    var resultHandler: (([Date]) -> Void)?
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -27,7 +29,7 @@ class SetViewController: UIViewController{
     }
     
     override func viewDidAppear(_ animated: Bool){
-        //sleepTimerがnil出ない場合
+        //sleepTimerがnilでない場合
         if alarm.sleepTimer != nil{
             //再生されているタイマーを止める。
             alarm.stopTimer()
@@ -37,12 +39,25 @@ class SetViewController: UIViewController{
     @IBAction func setBtnWasPressed(_ sender: Any) {
         //selectedWakeUpTimeにユーザーの入力した日付を代入
         //alarm.selectedWakeUpTime = sleepTimePicker.date
-        timeArray.append(sleepTimePicker.date)
+        
+        let vc = self.presentingViewController as! WakeupTimeViewController
+        vc.timeArray2nd.append(sleepTimePicker.date)
+        
+        self.dismiss(animated: true, completion: nil)
         //タイマー実行
         //alarm.runTimer()
-        //画面移動
-        self.performSegue(withIdentifier: "goHome", sender: nil)
+        
+        //アラートを設定 p.275
     }
     
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // segueのIDを確認して特定のsegueのときのみ動作させる
+//        if segue.identifier == "goTimeSetting" {
+//            // 遷移先のViewControllerを取得
+//            let next = segue.destination as? SetViewController
+//            // 遷移先のプロパティに処理ごと渡す
+//
+//
+//            }
+//        }
 }
